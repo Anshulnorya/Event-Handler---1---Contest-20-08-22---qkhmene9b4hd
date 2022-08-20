@@ -1,16 +1,9 @@
-import React from 'react'
-import '../styles/App.css';
-const App = () => {
+nes (4 sloc)  158 Bytes
 
-  const handleClick = (event) =>{
-    console.log('Button id is:-'+event.target.id);
-  }
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
-  // do not remove the two buttons or change their id
-  return (
-    <div id="main">
-      <button onClick={handleClick} id="button-a">Button A</button>
-      <button onClick={handleClick} id="button-b">Button B</button>
-    </div>
-  )
-}
+
+
+ReactDOM.render(<App />, document.getElementById("root"));
